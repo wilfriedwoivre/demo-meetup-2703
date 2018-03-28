@@ -1,0 +1,8 @@
+﻿<div class="container-fluid">
+    <h2>Game on ! </h2>
+
+    <p>Total Score : {{$ctrl.totalScore}}</p>
+
+    <p>Operation : {{$ctrl.first}} {{$ctrl.operand}} {{$ctrl.second}}</p>
+    <p>Result : <input type="text" ng-model="$ctrl.result" /> <button type="button" ui-keypress="{13:'$ctrl.validResult();'}" class="btn btn-primary btn-lg" ng-click="$ctrl.validResult();">Submit</button></p>
+</div>

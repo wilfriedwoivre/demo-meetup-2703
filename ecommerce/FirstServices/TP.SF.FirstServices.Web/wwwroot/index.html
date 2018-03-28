@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html lang="en" ng-app="storeApp">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Formation Service Fabric - &#9400; SOAT</title>
+
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap-theme.min.css" />
+
+</head>
+<body>
+    <nav class="navbar navbar-default">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">TP Home</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li><a href="#!/categories">Home</a></li>
+            <li><a href="#!/wishlist">My wishlist</a></li>
+            <li><a href="#!/about">About</a></li>
+        </ul>
+        <cart-preview></cart-preview>
+    </nav>
+
+    <div ng-view></div>
+
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="lib/angular/angular.min.js"></script>
+    <script src="lib/angular-route/angular-route.min.js"></script>
+    <script src="lib/angular-sanitize/angular-sanitize.min.js"></script>
+
+    <script src="app.module.js"></script>
+    <script src="app.config.js"></script>
+
+    <script src="modules/about/about.module.js"></script>
+    <script src="modules/about/about.component.js"></script>
+
+    <script src="modules/categories/categories.module.js"></script>
+    <script src="modules/categories/categories.component.js"></script>
+
+    <script src="modules/products/products.module.js"></script>
+    <script src="modules/products/products.component.js"></script>
+
+    <script src="modules/core/core.module.js"></script>
+    <script src="modules/core/cart/cart.module.js"></script>
+    <script src="modules/core/cart/cart.service.js"></script>
+
+    <script src="modules/wishlist/wishlist.module.js"></script>
+    <script src="modules/wishlist/wishlist.component.js"></script>
+
+    <script src="modules/cart/cart.module.js"></script>
+    <script src="modules/cart/cart.component.js"></script>
+
+    <script src="modules/cartpreview/cartpreview.module.js"></script>
+    <script src="modules/cartpreview/cartpreview.component.js"></script>
+</body>
+</html>
+

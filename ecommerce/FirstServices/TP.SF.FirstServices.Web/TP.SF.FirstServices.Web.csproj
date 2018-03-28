@@ -1,0 +1,62 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net462</TargetFramework>
+    <RuntimeIdentifier>win7-x64</RuntimeIdentifier>
+    <IsServiceFabricServiceProject>True</IsServiceFabricServiceProject>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+
+  <ItemGroup>
+    <None Include="wwwroot\app.config.js" />
+    <None Include="wwwroot\app.module.js" />
+    <None Include="wwwroot\index.html" />
+    <None Include="wwwroot\modules\about\about.component.js" />
+    <None Include="wwwroot\modules\about\about.module.js" />
+    <None Include="wwwroot\modules\about\about.template.html" />
+    <None Include="wwwroot\modules\cartpreview\cartPreview.component.js" />
+    <None Include="wwwroot\modules\cartpreview\cartPreview.module.js" />
+    <None Include="wwwroot\modules\cartpreview\cartPreview.template.html" />
+    <None Include="wwwroot\modules\cart\cart.component.js" />
+    <None Include="wwwroot\modules\cart\cart.module.js" />
+    <None Include="wwwroot\modules\cart\cart.template.html" />
+    <None Include="wwwroot\modules\categories\categories.component.js" />
+    <None Include="wwwroot\modules\categories\categories.module.js" />
+    <None Include="wwwroot\modules\categories\categories.template.html" />
+    <None Include="wwwroot\modules\core\cart\cart.module.js" />
+    <None Include="wwwroot\modules\core\cart\cart.service.js" />
+    <None Include="wwwroot\modules\core\core.module.js" />
+    <None Include="wwwroot\modules\products\products.component.js" />
+    <None Include="wwwroot\modules\products\products.module.js" />
+    <None Include="wwwroot\modules\products\products.template.html" />
+    <None Include="wwwroot\modules\wishlist\wishlist.component.js" />
+    <None Include="wwwroot\modules\wishlist\wishlist.module.js" />
+    <None Include="wwwroot\modules\wishlist\wishlist.template.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore" Version="1.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="1.1.2" />
+    <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="1.1.1" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="1.1.1" />
+    <PackageReference Include="Microsoft.ServiceFabric" Version="5.5.216" />
+    <PackageReference Include="Microsoft.ServiceFabric.Actors" Version="2.5.216" />
+    <PackageReference Include="Microsoft.ServiceFabric.AspNetCore.WebListener" Version="2.5.216" />
+    <PackageReference Include="Microsoft.ServiceFabric.Data" Version="2.5.216" />
+    <PackageReference Include="Microsoft.ServiceFabric.Services" Version="2.5.216" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.BrowserLink" Version="1.1.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="1.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="wwwroot\images\" />
+    <Folder Include="wwwroot\js\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\TP.SF.Common.Contracts\TP.SF.Common.Contracts.csproj" />
+    <ProjectReference Include="..\..\Common\TP.SF.Common.Model\TP.SF.Common.Model.csproj" />
+  </ItemGroup>
+
+</Project>

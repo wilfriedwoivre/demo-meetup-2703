@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.ServiceFabric.Actors" Version="3.0.472" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Demo2703.Domain\Demo2703.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
